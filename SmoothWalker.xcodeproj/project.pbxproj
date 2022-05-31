@@ -13,6 +13,7 @@
 		0E73BECE284696E100471E6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E73BECD284696E100471E6D /* Preview Assets.xcassets */; };
 		0E73BED72846973000471E6D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E73BED62846973000471E6D /* HealthKit.framework */; };
 		0E73BED92846A3C400471E6D /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BED82846A3C300471E6D /* HealthStore.swift */; };
+		0E73BEDF2846BB7B00471E6D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BEDE2846BB7B00471E6D /* Step.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0E73BED62846973000471E6D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		0E73BED82846A3C300471E6D /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		0E73BEDA2846A65500471E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E73BEDE2846BB7B00471E6D /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		0E73BEC5284696DD00471E6D /* SmoothWalker */ = {
 			isa = PBXGroup;
 			children = (
+				0E73BEDB2846BB4700471E6D /* Models */,
 				0E73BEDA2846A65500471E6D /* Info.plist */,
 				0E73BED42846973000471E6D /* SmoothWalker.entitlements */,
 				0E73BEC6284696DD00471E6D /* SmoothWalkerApp.swift */,
@@ -84,6 +87,14 @@
 				0E73BED62846973000471E6D /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E73BEDB2846BB4700471E6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E73BEDE2846BB7B00471E6D /* Step.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E73BEC9284696DD00471E6D /* ContentView.swift in Sources */,
+				0E73BEDF2846BB7B00471E6D /* Step.swift in Sources */,
 				0E73BED92846A3C400471E6D /* HealthStore.swift in Sources */,
 				0E73BEC7284696DD00471E6D /* SmoothWalkerApp.swift in Sources */,
 			);

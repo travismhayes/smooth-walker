@@ -39,7 +39,7 @@ class HealthStore {
         let daily = DateComponents(day: 1)
         // allows us to query the data for the sample we need.
         let predict = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
-        
+
         query = HKStatisticsCollectionQuery(quantityType: stepType, quantitySamplePredicate: predict, options: .cumulativeSum, anchorDate: anchorDate, intervalComponents: daily)
         
         query?.initialResultsHandler = { query, statisticsCollection, error in

@@ -11,7 +11,7 @@ import SwiftUI
 struct SmoothWalkerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(stepModel: StepModel())
         }
     }
 }

@@ -14,7 +14,39 @@
 		0E73BED72846973000471E6D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E73BED62846973000471E6D /* HealthKit.framework */; };
 		0E73BED92846A3C400471E6D /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BED82846A3C300471E6D /* HealthStore.swift */; };
 		0E73BEDF2846BB7B00471E6D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BEDE2846BB7B00471E6D /* Step.swift */; };
+		0E73BEE62846BED500471E6D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E73BEE52846BED500471E6D /* WidgetKit.framework */; };
+		0E73BEE82846BED500471E6D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E73BEE72846BED500471E6D /* SwiftUI.framework */; };
+		0E73BEEB2846BED500471E6D /* SmoothWalkerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BEEA2846BED500471E6D /* SmoothWalkerWidget.swift */; };
+		0E73BEEE2846BED700471E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E73BEED2846BED700471E6D /* Assets.xcassets */; };
+		0E73BEF02846BED700471E6D /* SmoothWalkerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BEEC2846BED500471E6D /* SmoothWalkerWidget.intentdefinition */; };
+		0E73BEF12846BED700471E6D /* SmoothWalkerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0E73BEEC2846BED500471E6D /* SmoothWalkerWidget.intentdefinition */; };
+		0E73BEF42846BED700471E6D /* SmoothWalkerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E73BEE42846BED500471E6D /* SmoothWalkerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0EA267372847CB97002FA73F /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA267362847CB97002FA73F /* StepModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E73BEF22846BED700471E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E73BEBB284696DD00471E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E73BEE32846BED500471E6D;
+			remoteInfo = SmoothWalkerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E73BEF82846BED700471E6D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E73BEF42846BED700471E6D /* SmoothWalkerWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E73BEC3284696DD00471E6D /* SmoothWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +59,15 @@
 		0E73BED82846A3C300471E6D /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		0E73BEDA2846A65500471E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0E73BEDE2846BB7B00471E6D /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		0E73BEE42846BED500471E6D /* SmoothWalkerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmoothWalkerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E73BEE52846BED500471E6D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0E73BEE72846BED500471E6D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0E73BEEA2846BED500471E6D /* SmoothWalkerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothWalkerWidget.swift; sourceTree = "<group>"; };
+		0E73BEEC2846BED500471E6D /* SmoothWalkerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SmoothWalkerWidget.intentdefinition; sourceTree = "<group>"; };
+		0E73BEED2846BED700471E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E73BEEF2846BED700471E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E73BEF92846BF0C00471E6D /* SmoothWalkerWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmoothWalkerWidgetExtension.entitlements; sourceTree = "<group>"; };
+		0EA267362847CB97002FA73F /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +79,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E73BEE12846BED500471E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E73BEE82846BED500471E6D /* SwiftUI.framework in Frameworks */,
+				0E73BEE62846BED500471E6D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0E73BEBA284696DD00471E6D = {
 			isa = PBXGroup;
 			children = (
+				0E73BEF92846BF0C00471E6D /* SmoothWalkerWidgetExtension.entitlements */,
 				0E73BEC5284696DD00471E6D /* SmoothWalker */,
+				0E73BEE92846BED500471E6D /* SmoothWalkerWidget */,
 				0E73BEC4284696DD00471E6D /* Products */,
 				0E73BED52846973000471E6D /* Frameworks */,
 			);
@@ -54,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0E73BEC3284696DD00471E6D /* SmoothWalker.app */,
+				0E73BEE42846BED500471E6D /* SmoothWalkerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,12 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				0E73BEDB2846BB4700471E6D /* Models */,
-				0E73BEDA2846A65500471E6D /* Info.plist */,
-				0E73BED42846973000471E6D /* SmoothWalker.entitlements */,
 				0E73BEC6284696DD00471E6D /* SmoothWalkerApp.swift */,
 				0E73BEC8284696DD00471E6D /* ContentView.swift */,
 				0E73BED82846A3C300471E6D /* HealthStore.swift */,
+				0E73BED42846973000471E6D /* SmoothWalker.entitlements */,
 				0E73BECA284696E100471E6D /* Assets.xcassets */,
+				0E73BEDA2846A65500471E6D /* Info.plist */,
 				0E73BECC284696E100471E6D /* Preview Content */,
 			);
 			path = SmoothWalker;
@@ -85,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				0E73BED62846973000471E6D /* HealthKit.framework */,
+				0E73BEE52846BED500471E6D /* WidgetKit.framework */,
+				0E73BEE72846BED500471E6D /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,8 +148,20 @@
 			isa = PBXGroup;
 			children = (
 				0E73BEDE2846BB7B00471E6D /* Step.swift */,
+				0EA267362847CB97002FA73F /* StepModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0E73BEE92846BED500471E6D /* SmoothWalkerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0E73BEEA2846BED500471E6D /* SmoothWalkerWidget.swift */,
+				0E73BEEC2846BED500471E6D /* SmoothWalkerWidget.intentdefinition */,
+				0E73BEED2846BED700471E6D /* Assets.xcassets */,
+				0E73BEEF2846BED700471E6D /* Info.plist */,
+			);
+			path = SmoothWalkerWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,15 +174,34 @@
 				0E73BEBF284696DD00471E6D /* Sources */,
 				0E73BEC0284696DD00471E6D /* Frameworks */,
 				0E73BEC1284696DD00471E6D /* Resources */,
+				0E73BEF82846BED700471E6D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E73BEF32846BED700471E6D /* PBXTargetDependency */,
 			);
 			name = SmoothWalker;
 			productName = SmoothWalker;
 			productReference = 0E73BEC3284696DD00471E6D /* SmoothWalker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0E73BEE32846BED500471E6D /* SmoothWalkerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E73BEF52846BED700471E6D /* Build configuration list for PBXNativeTarget "SmoothWalkerWidgetExtension" */;
+			buildPhases = (
+				0E73BEE02846BED500471E6D /* Sources */,
+				0E73BEE12846BED500471E6D /* Frameworks */,
+				0E73BEE22846BED500471E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmoothWalkerWidgetExtension;
+			productName = SmoothWalkerWidgetExtension;
+			productReference = 0E73BEE42846BED500471E6D /* SmoothWalkerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -128,6 +214,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					0E73BEC2284696DD00471E6D = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					0E73BEE32846BED500471E6D = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
@@ -146,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				0E73BEC2284696DD00471E6D /* SmoothWalker */,
+				0E73BEE32846BED500471E6D /* SmoothWalkerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +250,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E73BEE22846BED500471E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E73BEEE2846BED700471E6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,13 +266,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E73BEC9284696DD00471E6D /* ContentView.swift in Sources */,
+				0EA267372847CB97002FA73F /* StepModel.swift in Sources */,
 				0E73BEDF2846BB7B00471E6D /* Step.swift in Sources */,
 				0E73BED92846A3C400471E6D /* HealthStore.swift in Sources */,
 				0E73BEC7284696DD00471E6D /* SmoothWalkerApp.swift in Sources */,
+				0E73BEF12846BED700471E6D /* SmoothWalkerWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E73BEE02846BED500471E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E73BEF02846BED700471E6D /* SmoothWalkerWidget.intentdefinition in Sources */,
+				0E73BEEB2846BED500471E6D /* SmoothWalkerWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E73BEF32846BED700471E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E73BEE32846BED500471E6D /* SmoothWalkerWidgetExtension */;
+			targetProxy = 0E73BEF22846BED700471E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0E73BECF284696E100471E6D /* Debug */ = {
@@ -294,6 +411,7 @@
 		0E73BED2284696E100471E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SmoothWalker/SmoothWalker.entitlements;
@@ -327,6 +445,7 @@
 		0E73BED3284696E100471E6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SmoothWalker/SmoothWalker.entitlements;
@@ -357,6 +476,62 @@
 			};
 			name = Release;
 		};
+		0E73BEF62846BED700471E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SmoothWalkerWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P5QTK9U2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmoothWalkerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmoothWalkerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Tinker.SmoothWalker.SmoothWalkerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E73BEF72846BED700471E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SmoothWalkerWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P5QTK9U2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmoothWalkerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmoothWalkerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Tinker.SmoothWalker.SmoothWalkerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,6 +549,15 @@
 			buildConfigurations = (
 				0E73BED2284696E100471E6D /* Debug */,
 				0E73BED3284696E100471E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E73BEF52846BED700471E6D /* Build configuration list for PBXNativeTarget "SmoothWalkerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E73BEF62846BED700471E6D /* Debug */,
+				0E73BEF72846BED700471E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
